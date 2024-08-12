@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixin";
+
+/* Galeria (carousel) */
+#carouselExample {
+    max-width: 800px; 
+    margin: auto; 
+}
+
+#carouselExample .carousel-inner img {
+    height: 800px; 
+    object-fit: cover; 
+}
+
+/* Estilo para los botones de control del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    border-radius: 50%;
+}
+

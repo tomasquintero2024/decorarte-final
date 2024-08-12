@@ -1,0 +1,183 @@
+@import "scsssecundarios/variables";
+@import "scsssecundarios/contacto";
+@import "scsssecundarios/header";
+@import "scsssecundarios/main";
+@import "scsssecundarios/footer";
+@import "scsssecundarios/mixin";
+@import "scsssecundarios/galeria";
+@import "scsssecundarios/contacto";
+@import "scsssecundarios/servicios";
+  
+
+
+@media screen and (max-width: 768px) {
+
+  .propuestas {
+    grid-template-columns: 1fr;
+  }
+
+  .videos-section {
+    flex-direction: column;
+  }
+
+  header .loguito {
+    width: 150px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .content-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "video"
+      "text";
+  }
+
+  .video-background video {
+    width: 100%; 
+  }
+
+  main h2, main p {
+    margin: 0 5%;
+  }
+
+  ul {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+  }
+
+  .icono {
+    margin-right: 10px;
+    width: 30px;
+  }
+
+  .redes-sociales {
+    font-size: 1.2rem;
+    color: rgb(76, 1, 146);
+    text-align: center; 
+  }
+
+  footer {
+    .items li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      flex-direction: row; 
+    }
+
+    .icono {
+      margin-right: 10px;
+      width: 30px;
+    }
+
+    .redes-sociales {
+      font-size: 1rem;
+      color: rgb(76, 1, 146);
+      text-align: center; 
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  header .loguito {
+    width: 100px;
+    top: 5px;
+    right: 5px;
+  }
+
+  .content-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "video"
+      "text";
+  }
+
+  .video-background video {
+    width: 100%; 
+  }
+
+  h2, p {
+    margin: 0 10%;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  main h2 {
+    text-align: center;
+    margin: 0 2%;
+  }
+
+  main p {
+    text-align: left;
+    margin: 0 2%;
+    font-size: 1rem;
+  }
+
+  footer textarea {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 10px;
+  }
+
+  footer input[type="submit"] {
+    width: 100%;
+  }
+
+  .videos-section {
+    gap: 5px;
+  }
+
+  .video-container {
+    padding-top: 75%;
+  }
+
+  ul li {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .icono {
+    margin: 0 auto 10px; 
+    width: 40px;
+  }
+
+  .redes-sociales {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  footer {
+    .items li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    .icono {
+      margin: 0 auto 10px; 
+      width: 25px; 
+    }
+
+    .redes-sociales {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  }
+}

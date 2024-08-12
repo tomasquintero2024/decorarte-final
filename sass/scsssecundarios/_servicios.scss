@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixin";
+
+/* Servicios */
+.orden{
+    color: $color-terciario;
+}
+
+.info {
+    list-style-type: circle;
+}
+
+/* Servicios con grid */
+.propuestas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.propuestas img {
+@include medidas (100%, auto);
+    display: block;
+}
+

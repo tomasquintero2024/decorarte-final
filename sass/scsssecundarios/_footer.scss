@@ -1,0 +1,53 @@
+@import "variables";
+@import "mixin";
+
+ /* Footer */
+ footer {
+  text-align: center;
+  background: rgb(249,130,168);
+  background: radial-gradient(circle, rgba(249,130,168,1) 0%, rgba(255,244,255,1) 100%);
+  padding: 20px;
+  margin-top: 20px;
+
+  textarea {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  .items {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+  }
+
+  .icono {
+    @include medidas(40px, auto); 
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+
+  .redes-sociales {
+    text-decoration: none;
+    color: $color-secundario;
+
+    &:hover {
+      color: rgb(188, 141, 232);
+      text-decoration: underline;
+    }
+  }
+}
+  

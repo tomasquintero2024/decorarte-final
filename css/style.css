@@ -1,0 +1,359 @@
+/* Contacto (videos con flex) */
+.videos-section {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.video-container {
+  flex: 1;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Header */
+header .header-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+header .fondo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+header .loguito {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  height: auto;
+}
+header .navbar .navbar-brand {
+  color: #4c023b;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header .navbar .navbar-nav .nav-link {
+  color: #6e006e;
+  font-size: 1.1rem;
+  padding: 8px 15px;
+}
+header .navbar .navbar-nav .nav-link:hover {
+  color: #f93dff;
+}
+header .navbar .navbar-toggler {
+  border-color: #c70ad4;
+}
+header .navbar .navbar-toggler .navbar-toggler-icon {
+  background-color: #4c023b;
+}
+
+/* Main Section */
+main {
+  background: rgb(255, 73, 131);
+  background: radial-gradient(circle, rgb(255, 73, 131) 0%, rgb(236, 216, 236) 100%);
+  padding: 20px;
+  /* Video Background */
+}
+main h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4c023b;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+main h2 {
+  text-align: justify;
+  text-transform: capitalize;
+  color: #6e006e;
+  margin: 0% 10%;
+  margin-bottom: 15px;
+}
+main p {
+  color: #940466;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: oblique;
+  margin: 0% 10%;
+}
+main .video-background {
+  width: 100%;
+  height: 100%;
+}
+main .video-background video {
+  width: 70%;
+  height: auto;
+}
+main .content-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  grid-template-areas: "video text";
+}
+main .video-background {
+  grid-area: video;
+}
+main .text-content {
+  grid-area: text;
+  padding: 20px;
+}
+main p {
+  color: #940466;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: rgb(249, 130, 168);
+  background: radial-gradient(circle, rgb(249, 130, 168) 0%, rgb(255, 244, 255) 100%);
+  padding: 20px;
+  margin-top: 20px;
+}
+footer textarea {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+footer input[type=submit] {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+}
+footer .items {
+  list-style-type: none;
+  padding: 0;
+}
+footer .items li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+footer .icono {
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+footer .redes-sociales {
+  text-decoration: none;
+  color: #6e006e;
+}
+footer .redes-sociales:hover {
+  color: rgb(188, 141, 232);
+  text-decoration: underline;
+}
+
+/* Galeria (carousel) */
+#carouselExample {
+  max-width: 800px;
+  margin: auto;
+}
+
+#carouselExample .carousel-inner img {
+  height: 800px;
+  object-fit: cover;
+}
+
+/* Estilo para los botones de control del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Contacto (videos con flex) */
+.videos-section {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.video-container {
+  flex: 1;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Servicios */
+.orden {
+  color: #940466;
+}
+
+.info {
+  list-style-type: circle;
+}
+
+/* Servicios con grid */
+.propuestas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.propuestas img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .propuestas {
+    grid-template-columns: 1fr;
+  }
+  .videos-section {
+    flex-direction: column;
+  }
+  header .loguito {
+    width: 150px;
+    top: 10px;
+    right: 10px;
+  }
+  .content-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "video" "text";
+  }
+  .video-background video {
+    width: 100%;
+  }
+  main h2, main p {
+    margin: 0 5%;
+  }
+  ul {
+    padding-left: 0;
+    margin: 0;
+  }
+  ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .icono {
+    margin-right: 10px;
+    width: 30px;
+  }
+  .redes-sociales {
+    font-size: 1.2rem;
+    color: rgb(76, 1, 146);
+    text-align: center;
+  }
+  footer .items li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-direction: row;
+  }
+  footer .icono {
+    margin-right: 10px;
+    width: 30px;
+  }
+  footer .redes-sociales {
+    font-size: 1rem;
+    color: rgb(76, 1, 146);
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .loguito {
+    width: 100px;
+    top: 5px;
+    right: 5px;
+  }
+  .content-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "video" "text";
+  }
+  .video-background video {
+    width: 100%;
+  }
+  h2, p {
+    margin: 0 10%;
+  }
+  main h1 {
+    font-size: 1.5rem;
+  }
+  main h2 {
+    text-align: center;
+    margin: 0 2%;
+  }
+  main p {
+    text-align: left;
+    margin: 0 2%;
+    font-size: 1rem;
+  }
+  footer textarea {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 10px;
+  }
+  footer input[type=submit] {
+    width: 100%;
+  }
+  .videos-section {
+    gap: 5px;
+  }
+  .video-container {
+    padding-top: 75%;
+  }
+  ul li {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .icono {
+    margin: 0 auto 10px;
+    width: 40px;
+  }
+  .redes-sociales {
+    text-align: center;
+    font-size: 1rem;
+  }
+  footer .items li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  footer .icono {
+    margin: 0 auto 10px;
+    width: 25px;
+  }
+  footer .redes-sociales {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
